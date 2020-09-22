@@ -1,0 +1,46 @@
+.hero {
+    background: url(/assets/img/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    .container-hero {
+        padding-top: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex: 1;
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+            h1 {
+                font-size: 6rem;
+                line-height: 7rem;
+                font-weight: 500;
+            }
+            p {
+                font-size: 1.4rem;
+                line-height: 3rem;
+            }
+            &-button {
+                margin-top: 45px;
+                .btn {
+                    width: 250px;
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        &__img {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+    }
+}

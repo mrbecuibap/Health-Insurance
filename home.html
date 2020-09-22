@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<!-- ========================================== HEADER SECTION ========================================== -->
+<header class="grid header">
+    <div class="grid wide container-navbar">
+        <a href="home.html" class="container-navbar__logo">
+            <img src="assets/img/logo_transparent.png" alt="Logo">
+        </a>
+        <div class="container-navbar__menu">
+            <ul class="container-navbar__menu-list">
+                <li class="container-navbar__menu-list-item">
+                    <a href="" class="container-navbar__menu-list-item-link">Home</a>
+                </li>
+                <li class="container-navbar__menu-list-item">
+                    <a href="about.html" class="container-navbar__menu-list-item-link">About</a>
+                </li>
+                <li class="container-navbar__menu-list-item">
+                    <a href="contact.html" class="container-navbar__menu-list-item-link">Contact</a>
+                </li>
+                <li class="container-navbar__menu-list-item">
+                    <a href="feedback.html" class="container-navbar__menu-list-item-link">Feedback</a>
+                </li>
+                <li class="container-navbar__menu-list-item">
+                    <a href="service.html" class="container-navbar__menu-list-item-link">Service
+                        <i class="fas fa-caret-down"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-navbar__button">
+            <button onclick="openLoginForm()" class="btn btn-primary" style="display: none;">
+                <p>LOGIN</p>
+            </button>
+            <div class="container-navbar__button-info">
+                <img src="assets/img/avatar.png" alt="" class="container-navbar__button-info-img">
+                <div class="container-navbar__button-info-username">Long Do</div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ========================================== HERO SECTION ========================================== -->
+<section class="grid hero">
+    <div class="grid wide container-hero">
+        <div class="container-hero__text layer" data-speed="2">
+            <h3>We Are Here For Your Care</h3>
+            <h1>Best Care & Better Doctor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.Risus cmodo viverra</p>
+            <div class="container-hero__text-button layer" data-speed="1">
+                <button class="btn btn-primary">
+                    <p>Make an appointment</p>
+                </button>
+            </div>
+        </div>
+        <div class="container-hero__img layer" data-speed="3">
+            <img src="assets/img/banner_img.png" alt="Hero Image">
+        </div>
+    </div>
+</section>
+<!-- ========================================== ABOUT SECTION ========================================== -->
+<section class="grid about">
+    <div class="grid wide container-about">
+        <div class="container-about__img layer" data-speed="2">
+            <img src="assets/img/top_service.png" alt="About Image">
+        </div>
+        <div class="container-about__content lazy-loading">
+            <div class="container-about__content-title">About Us</div>
+            <p class="container-about__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse ultrices gravida. Risus cmodo viverra maecenas accumsan lacus vel</p>
+            <div class="container-about__content-button layer" data-speed="1">
+                <button class="btn btn-primary">
+                    <p>LEARN MORE</p>
+                </button>
+            </div>
+            <div class="container-about__content-more">
+                <div class="container-about__content-more-item">
+                    <img src="assets/img/icon/banner_1.svg" alt="Banner Icon">
+                    <p>Emergency</p>
+                </div>
+                <div class="container-about__content-more-item">
+                    <img src="assets/img/icon/banner_2.svg" alt="Banner Icon">
+                    <p>Appointment</p>
+                </div>
+                <div class="container-about__content-more-item">
+                    <img src="assets/img/icon/banner_3.svg" alt="Banner Icon">
+                    <p>Qualfied</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================================== FEATURE SECTION ========================================== -->
+<section class="grid feature">
+    <div class="grid wide container-feature">
+        <div class="container-feature__title">
+            <h1>Our Services</h1>
+        </div>
+        <div class="container-feature__content">
+            <div class="container-feature__content-item">
+                <div class="container-feature__content-item-details">
+                    <div class="container-feature__content-item-details-heading">
+                        <div class="container-feature__content-item-details-heading-icon">
+                            <img src="assets/img/icon/feature_1.svg" alt="Feature Icon">
+                        </div>
+                        <h2>Better Future</h2>
+                    </div>
+                    <p class="container-feature__content-item-details-para">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                    </p>
+                </div>
+                <div class="container-feature__content-item-details">
+                    <div class="container-feature__content-item-details-heading">
+                        <div class="container-feature__content-item-details-heading-icon">
+                            <img src="assets/img/icon/feature_2.svg" alt="Feature Icon">
+                        </div>
+                        <h2>Better Future</h2>
+                    </div>
+                    <p class="container-feature__content-item-details-para">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-feature__content-item">
+                <div class="container-feature__content-item-img">
+                    <img src="assets/img/service.png" alt="Feature Service">
+                </div>
+            </div>
+
+            <div class="container-feature__content-item">
+                <div class="container-feature__content-item-details">
+                    <div class="container-feature__content-item-details-heading">
+                        <div class="container-feature__content-item-details-heading-icon">
+                            <img src="assets/img/icon/feature_1.svg" alt="Feature Icon">
+                        </div>
+                        <h2>Better Future</h2>
+                    </div>
+                    <p class="container-feature__content-item-details-para">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                    </p>
+                </div>
+                <div class="container-feature__content-item-details">
+                    <div class="container-feature__content-item-details-heading">
+                        <div class="container-feature__content-item-details-heading-icon">
+                            <img src="assets/img/icon/feature_2.svg" alt="Feature Icon">
+                        </div>
+                        <h2>Better Future</h2>
+                    </div>
+                    <p class="container-feature__content-item-details-para">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================================== DEPARTMENT SECTION ========================================== -->
+<section class="grid department">
+    <div class="grid wide container-department">
+        <div class="container-department__title">
+            <h1>Our Department</h1>
+        </div>
+        <div class="container-department__wrap">
+            <div class="container-department__wrap-content">
+                <div class="container-department__wrap-content-icon">
+                    <img src="assets/img/icon/feature_2.svg" alt="">
+                </div>
+                <h2 class="container-department__wrap-content-title">
+                    Better Future
+                </h2>
+                <p class="container-department__wrap-content-para">
+                    Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                </p>
+            </div>
+            <div class="container-department__wrap-content">
+                <div class="container-department__wrap-content-icon">
+                    <img src="assets/img/icon/feature_2.svg" alt="">
+                </div>
+                <h2 class="container-department__wrap-content-title">
+                    Better Future
+                </h2>
+                <p class="container-department__wrap-content-para">
+                    Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                </p>
+            </div>
+            <div class="container-department__wrap-content">
+                <div class="container-department__wrap-content-icon">
+                    <img src="assets/img/icon/feature_2.svg" alt="">
+                </div>
+                <h2 class="container-department__wrap-content-title">
+                    Better Future
+                </h2>
+                <p class="container-department__wrap-content-para">
+                    Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                </p>
+            </div>
+            <div class="container-department__wrap-content">
+                <div class="container-department__wrap-content-icon">
+                    <img src="assets/img/icon/feature_2.svg" alt="">
+                </div>
+                <h2 class="container-department__wrap-content-title">
+                    Better Future
+                </h2>
+                <p class="container-department__wrap-content-para">
+                    Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day which divided our have.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================================== DOCTOR SECTION ========================================== -->
+<section class="grid doctor">
+    <div class="grid wide container-doctor">
+        <div class="container-doctor__title">
+            <h1>Experienced Doctors</h1>
+            <p>Face Replenish Sea Good Winged Bearing Years Air Divide WasHave Night Male Also</p>
+        </div>
+        <div class="container-doctor__char">
+            <div class="container-doctor__char-wrap">
+                <div class="container-doctor__char-wrap-img">
+                    <img src="assets/img/doctor/doctor_1.png" alt="">
+                </div>
+                <div class="container-doctor__char-wrap-info">
+                    <h2 class="container-doctor__char-wrap-info-name">DR Adam Billiard</h2>
+                    <p class="container-doctor__char-wrap-info-position">Heart specialist</p>
+                </div>
+            </div>
+            <div class="container-doctor__char-wrap">
+                <div class="container-doctor__char-wrap-img">
+                    <img src="assets/img/doctor/doctor_1.png" alt="">
+                </div>
+                <div class="container-doctor__char-wrap-info">
+                    <h2 class="container-doctor__char-wrap-info-name">DR Adam Billiard</h2>
+                    <p class="container-doctor__char-wrap-info-position">Heart specialist</p>
+                </div>
+            </div>
+            <div class="container-doctor__char-wrap">
+                <div class="container-doctor__char-wrap-img">
+                    <img src="assets/img/doctor/doctor_1.png" alt="">
+                </div>
+                <div class="container-doctor__char-wrap-info">
+                    <h2 class="container-doctor__char-wrap-info-name">DR Adam Billiard</h2>
+                    <p class="container-doctor__char-wrap-info-position">Heart specialist</p>
+                </div>
+            </div>
+            <div class="container-doctor__char-wrap">
+                <div class="container-doctor__char-wrap-img">
+                    <img src="assets/img/doctor/doctor_1.png" alt="">
+                </div>
+                <div class="container-doctor__char-wrap-info">
+                    <h2 class="container-doctor__char-wrap-info-name">DR Adam Billiard</h2>
+                    <p class="container-doctor__char-wrap-info-position">Heart specialist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================================== APPOINTMENT SECTION ========================================== -->
+<section class="grid appointment">
+    <div class="grid wide container-appointment">
+        <form action="home.html" class="container-appointment__form">
+            <h2>Make an Appointment</h2>
+            <input type="text" name="name" id="name" placeholder="Your name">
+            <input type="email" name="email" id="email" placeholder="Email address">
+
+            <select name="list" id="list">
+                <option value="">Select Service</option>
+                <option value="">Name Service</option>
+                <option value="">Name Service</option>
+                <option value="">Name Service</option>
+            </select>
+
+            <select name="list" id="list">
+                <option value="">Time</option>
+                <option value="">8h30 to 10h</option>
+                <option value="">10h to 11h30</option>
+                <option value="">13h30 to 15h</option>
+            </select>
+
+            <textarea rows="4" cols="50" name="" form="">Your note...</textarea>
+            <button class="btn btn-primary">
+                <p>MAKE AN APPOINTMENT</p>
+            </button>
+        </form>
+        <div class="container-appointment__img">
+            <img src="assets/img/reservation.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- ========================================== FOOTER SECTION ========================================== -->
+<footer class="footer">
+    <div class="grid container-footer">
+        <div class="grid wide container-footer__content">
+            <div class="container-footer__content-item">
+                <div class="container-footer__content-item-title">
+                    <img src="assets/img/logo_transparent.png" alt="">
+                </div>
+                <h2 class="container-footer__content-item-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
+                <div class="container-footer__content-item-icon">
+                    <a class="container-footer__content-item-icon-link" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="container-footer__content-item-icon-link" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="container-footer__content-item-icon-link" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="container-footer__content-item-icon-link" href="">
+                        <i class="fab fa-skype"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-footer__content-item">
+                <div class="container-footer__content-item-title">
+                    <h2>Quick Links</h2>
+                </div>
+                <ul class="container-footer__content-item-list">
+                    <li class="container-footer__content-item-list-item">
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-footer__content-item">
+                <div class="container-footer__content-item-title">
+                    <h2>Quick Links</h2>
+                </div>
+                <ul class="container-footer__content-item-list">
+                    <li class="container-footer__content-item-list-item">
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-footer__content-item">
+                <div class="container-footer__content-item-title">
+                    <h2>Quick Links</h2>
+                </div>
+                <ul class="container-footer__content-item-list">
+                    <li class="container-footer__content-item-list-item">
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-footer__content-item">
+                <div class="container-footer__content-item-title">
+                    <h2>Quick Links</h2>
+                </div>
+                <ul class="container-footer__content-item-list">
+                    <li class="container-footer__content-item-list-item">
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="grid container-footer">
+        <div class="grid wide container-footer__copyright">
+            <p class="container-footer__copyright-text">
+                Copyright ©2020 All rights reserved | This template is made with luv by <a href="">Long Dep Trai</a>
+            </p>
+            <div class="container-footer__copyright-icon">
+                <a href="" class="container-footer__copyright-icon-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="container-footer__copyright-icon-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="container-footer__copyright-icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="container-footer__copyright-icon-link">
+                    <i class="fab fa-skype"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ========================================== POPUP SECTION ========================================== -->
+<div class="popup-overlay" onclick="closeLoginForm()"></div>
+<div class="popup">
+    <div class="popup-close" onclick="closeLoginForm()">&times;</div>
+    <div class="popup-form" id="registerFormActive">
+        <div class="popup-form__button-box">
+            <div id="btn"></div>
+            <button type="button" class="popup-form__button-box-toggle" id="loginButton" onclick="login()">Login</button>
+            <button type="button" class="popup-form__button-box-toggle" id="registerButton" onclick="register()">Register</button>
+        </div>
+        <div id="login" class="popup-form__group">
+            <div class="popup-form__group-avatar layer" data-speed="2">
+                <img src="assets/img/login_form.png" alt="">
+            </div>
+            <div class="popup-form__group-heading">
+                Member login
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="username">Username</label>
+                <input type="text" id="username">
+            </div>
+            <div class="popup-form__group-element">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div class="popup-form__group-element">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+        <div id="register" class="popup-form__group">
+            <div class="popup-form__group-avatar layer" data-speed="2">
+                <img src="assets/img/login_form.png" alt="">
+            </div>
+            <div class="popup-form__group-heading">
+                Member Register
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="firstname">First Name</label>
+                <input type="text" id="firstname">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="lastname">Last Name</label>
+                <input type="text" id="lastname">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="username">Username</label>
+                <input type="text" id="username">
+            </div>
+            <div class="popup-form__group-element">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="phone">Phone</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="state">State</label>
+                <input type="text" id="state">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="country">Country</label>
+                <input type="text" id="country">
+            </div>
+            <div class="popup-form__group-element">
+                <label label for="city">City</label>
+                <input type="text" id="city">
+            </div>
+            <div class="popup-form__group-element">
+                <button type="submit">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.department {
+    background: url(/assets/img/review_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 140px 0;
+    .container-department {
+        margin-top: -500px !important;
+        padding: 100px 0;
+        background-color: var(--white-color);
+        &__title {
+            text-align: center;
+            h1 {
+                font-size: 4.2rem;
+                font-weight: 600;
+                margin-bottom: 80px;
+            }
+        }
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            &-content {
+                position: relative;
+                border: 1px solid #f2f6f8;
+                padding: 60px 15px 32px;
+                margin: 0 5% 60px;
+                width: 40%;
+                text-align: center;
+                &-icon {
+                    position: absolute;
+                    top: -15%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #f0f4f6;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                &-title {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    margin-bottom: 27px;
+                }
+                &-para {
+                    color: #7f7f7f;
+                    line-height: 1.8rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

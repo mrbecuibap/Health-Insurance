@@ -1,0 +1,43 @@
+.doctor {
+    .container-doctor {
+        padding: 140px 0;
+        background-color: var(--white-color);
+        &__title {
+            margin-bottom: 84px;
+            text-align: center;
+            h1 {
+                font-size: 4.2rem;
+                font-weight: 600;
+                margin-bottom: 28px;
+            }
+            p {
+                color: #7f7f7f;
+                line-height: 1.8rem;
+                font-size: 1.4rem;
+            }
+        }
+        &__char {
+            display: flex;
+            &-wrap {
+                padding: 0 18px;
+                &-img {
+                    img {
+                    }
+                }
+                &-info {
+                    padding-top: 36px;
+                    &-name {
+                        margin-bottom: 19px;
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                    }
+                    &-position {
+                        color: #7f7f7f;
+                        line-height: 1.8rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

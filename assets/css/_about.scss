@@ -1,0 +1,90 @@
+@mixin aboutSection($value: true) {
+    @if $value {
+        margin-bottom: 360px;
+    } @else {
+        margin-bottom: 0px;
+    }
+}
+.about-page {
+    @include aboutSection(true);
+}
+.about {
+    background: url(/assets/img/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: 50% 90%;
+    background-position: left bottom;
+    .container-about {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 140px;
+        &__img {
+            padding: 0 50px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 50px;
+            &-title {
+                font-size: 4.2rem;
+                font-weight: 600;
+                margin-bottom: 24px;
+            }
+            &-desc {
+                font-size: 1.6rem;
+                line-height: 3rem;
+            }
+            &-button {
+                margin-top: 12px;
+            }
+            &-more {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 100px;
+                &-item {
+                    text-align: center;
+                    position: relative;
+                    img {
+                        width: 44px;
+                        height: 44px;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                        margin-bottom: 8px;
+                    }
+                }
+                &-item:first-child::after,
+                &-item:nth-child(2)::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -40%;
+                    bottom: 0;
+                    transform: translateX(40%);
+                    border: 1px solid #e4e6ea;
+                }
+            }
+        }
+    }
+}
+
+// ========================================== BANNER SECTION ==========================================
+.banner {
+    background: url(/assets/img/breadcrumb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    .container-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &__title {
+            color: var(--white-color);
+            font-size: 9rem;
+            font-weight: 600;
+        }
+    }
+}

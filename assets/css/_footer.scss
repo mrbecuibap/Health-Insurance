@@ -1,0 +1,76 @@
+.footer {
+    .container-footer {
+        background-color: #eeeeee;
+        &__content {
+            display: flex;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                color: #7b838a;
+                padding: 140px 0;
+                &-title {
+                    img {
+                        height: 48px;
+                    }
+                    h2 {
+                        padding: 0;
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                        color: var(--text-color);
+                        margin-bottom: 30px;
+                    }
+                }
+                &-para {
+                    font-size: 1.6rem;
+                    line-height: 3rem;
+                }
+                &-icon {
+                    font-size: 1.4rem;
+                    &-link {
+                        i {
+                            margin: 0 8px;
+                            color: #7b838a;
+                        }
+                    }
+                }
+                &-list {
+                    &-item {
+                        display: flex;
+                        flex-direction: column;
+                        &-link {
+                            color: #7b838a;
+                            margin-bottom: 14px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        &__copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 26px 0;
+            color: #888;
+            font-size: 1.5rem;
+            &-text {
+                a {
+                    color: #0065e1;
+                    line-height: 3rem;
+                }
+            }
+            &-icon {
+                &-link {
+                    i {
+                        color: var(--white-color);
+                        margin: 0 8px;
+                    }
+                }
+            }
+        }
+    }
+    .container-footer:last-child {
+        background-color: #0d1820;
+    }
+}

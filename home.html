@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+    <div class="scrollTop" onclick="scrollToTop()"><i class="fas fa-angle-up"></i></div>
 <!-- ========================================== HEADER SECTION ========================================== -->
 <header class="grid header">
     <div class="grid wide container-navbar">
@@ -39,12 +40,20 @@
             </ul>
         </div>
         <div class="container-navbar__button">
-            <button onclick="openLoginForm()" class="btn btn-primary" style="display: none;">
+            <!-- <button onclick="openLoginForm()" class="btn btn-primary" style="display: none;"> -->
+            <button onclick="openLoginForm()" class="btn btn-primary">
                 <p>LOGIN</p>
             </button>
-            <div class="container-navbar__button-info">
+            <div class="container-navbar__button-info" style="display: none;">
                 <img src="assets/img/avatar.png" alt="" class="container-navbar__button-info-img">
                 <div class="container-navbar__button-info-username">Long Do</div>
+                <ul class="container-navbar__button-info-list">
+                    <li class="container-navbar__button-info-list-item">
+                        <a href="" class="container-navbar__button-info-list-item-link">My Infomation</a>
+                    </li>
+                    <li class="container-navbar__button-info-list-item">
+                        <a href="" class="container-navbar__button-info-list-item-link">Sign out</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -411,25 +420,32 @@
             <button type="button" class="popup-form__button-box-toggle" id="loginButton" onclick="login()">Login</button>
             <button type="button" class="popup-form__button-box-toggle" id="registerButton" onclick="register()">Register</button>
         </div>
-        <div id="login" class="popup-form__group">
+        <form id="login" class="popup-form__group">
             <div class="popup-form__group-avatar layer" data-speed="2">
                 <img src="assets/img/login_form.png" alt="">
             </div>
             <div class="popup-form__group-heading">
                 Member login
             </div>
+
             <div class="popup-form__group-element">
-                <label label for="username">Username</label>
-                <input type="text" id="username">
+                <input type="text" name="username" id="username" autocomplete="off" required>
+                <label for="name" class="label-text success">
+                    <span class="content-text" label for="username">Username</span>
+                    <i class="fas fa-check-circle content-icon"></i>
+                </label>
             </div>
+
             <div class="popup-form__group-element">
-                <label for="password">Password</label>
-                <input type="password" id="password">
+                <input type="password" name="password" id="password" autocomplete="off" required>
+                <label for="password" class="label-text">
+                    <span class="content-text" label for="password">Password</span>
+                </label>
             </div>
             <div class="popup-form__group-element">
                 <button type="submit">Login</button>
             </div>
-        </div>
+        </form>
         <div id="register" class="popup-form__group">
             <div class="popup-form__group-avatar layer" data-speed="2">
                 <img src="assets/img/login_form.png" alt="">

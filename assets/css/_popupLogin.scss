@@ -103,28 +103,100 @@
                 margin: 20px 0px;
             }
             &-element {
-                padding: 8px 20px;
-                label {
-                    display: block;
-                    font-size: 14px;
-                    color: #222;
-                    margin-bottom: 5px;
+                padding: 8px 20px 12px;
+                position: relative;
+                width: 100%;
+                .label-text {
+                    // display: block;
+                    // font-size: 14px;
+                    // color: #222;
+                    // margin-bottom: 5px;
+
+                    position: absolute;
+                    bottom: 6px;
+                    left: 20px;
+                    width: 260px;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid black;
+                    overflow: hidden;
+                    font-size: 1.4rem;
+                    .content-icon {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 5px;
+                        font-size: 1.6rem;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        bottom: -1px;
+                        height: 100%;
+                        width: 100%;
+                        border-bottom: 3px solid #5fa8d3;
+                        //#4caf50 success
+                        transform: translateX(-100%);
+                        transition: transform 0.3s ease;
+                    }
+                    &.success {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0px;
+                            bottom: -1px;
+                            border-bottom: 3px solid #4caf50;
+                        }
+                    }
+                    .content-text {
+                        position: absolute;
+                        bottom: 5px;
+                        left: 0px;
+                        transition: all 0.3s ease;
+                    }
                 }
                 input {
+                    // width: 100%;
+                    // padding: 8px 10px;
+                    // box-sizing: border-box;
+                    // outline: none;
+                    // border: 1px solid #aaa;
+                    // background: #eee;
+                    // border-radius: 5px;
+
+                    background: transparent;
                     width: 100%;
-                    padding: 8px 10px;
-                    box-sizing: border-box;
+                    color: #595f6e;
+                    padding-top: 20px;
+                    border: none;
                     outline: none;
-                    border: 1px solid #aaa;
-                    background: #eee;
-                    border-radius: 5px;
+                    font-size: 1.4rem;
+                    &:focus + .label-text,
+                    &:valid + .label-text {
+                        border-bottom: unset;
+                    }
+                    &:focus + .label-text .content-text,
+                    &:valid + .label-text .content-text {
+                        transform: translateY(-150%);
+                        font-size: 14px;
+                        color: #5fa8d3;
+                    }
+
+                    &:focus + .success .content-text,
+                    &:valid + .success .content-text {
+                        color: #4caf50;
+                    }
+                    &:focus + .label-text::after,
+                    &:valid + .label-text::after {
+                        transform: translateX(0%);
+                    }
                 }
                 input[type="text"] {
                 }
                 input[type="password"] {
                 }
                 button {
-                    margin-top: 5px;
+                    margin-top: 34px;
                     width: 100%;
                     padding: 10px 0px;
                     text-transform: uppercase;

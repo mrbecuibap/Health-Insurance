@@ -1,0 +1,70 @@
+.scrollTop {
+    z-index: 1000;
+    position: fixed;
+    bottom: 1000px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--second-color)
+    );
+    background-size: 200% auto;
+    transition: all cubic-bezier(0.2, -0.2, 0.77, 1.24) 0.4s;
+    cursor: pointer;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    i {
+        margin: auto;
+        font-size: 1.6rem;
+        color: var(--white-color);
+    }
+    &:hover {
+        background-position: center top;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+        opacity: 0;
+    }
+    &::before {
+        background-color: var(--second-color);
+        z-index: -1;
+        transition: opacity 75ms linear, background-color 100ms linear;
+    }
+    &:hover::before {
+        background-color:var(--second-color);
+    }
+    &:hover::after {
+        background-color: var(--second-color);
+        z-index: -1;
+        animation: pulse 1000ms infinite;
+        will-change: transform, opacity;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.scrollTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
